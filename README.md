@@ -4,7 +4,7 @@ Build an AWS Lambda Python Docker container image, and test it locally as if tri
 
 # Description 
 
-This AWS Lambda function is a simple Hello World app where it returns somthing like `{"message": "Hello Steve Jobs!"}`
+This AWS Lambda function is a simple Hello World app where it returns something like `{"message": "Hello Steve Jobs!"}`
 
 If you want to build it, run 
 ```bash
@@ -24,4 +24,9 @@ If necessary, you can change some details:
 
 - If you want to change the version of Python, refer to `Change here (1)` and `Change here (2)` in the `Dockerfile`, and change the version after `public.ecr.aws/lambda/python` to what you want
 
-- If you have a different architecture than `arm64` which is recommended by AWS, you can refer to `Change here (3)` in the `Dockerfile` and change the github link accordingly. (ex) aws-lambda-rie-arm64 -> aws-lambda-rie if x86 architecture
+- If you have a different architecture than `arm64` which is recommended by AWS, you can refer to `Change here (3)` in the `Dockerfile` and change the GitHub link accordingly. (ex) aws-lambda-rie-arm64 -> aws-lambda-rie if x86 architecture
+
+# References
+
+- https://docs.aws.amazon.com/lambda/latest/dg/images-test.html -> mine is different from the official documents, as it didn't work for me, though try it first
+- https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/python-image.html
